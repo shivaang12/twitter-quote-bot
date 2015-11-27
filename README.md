@@ -3,7 +3,7 @@ A Quote twitting Bot
 
 Required Libraries:
 - python-twitter
-- urllib2
+- urllib2 or requests (for using 'requests' module instead of 'urllib2', switch to 'request' branch instead of 'master')
 - time
 - sys
 
