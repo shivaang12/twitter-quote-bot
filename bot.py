@@ -2,7 +2,7 @@
 #Twitter_quote_bot
 
 import json
-import urllib2
+import requests
 import twitter
 import time, sys
 
@@ -21,8 +21,8 @@ try:
     while True:
         #url = "http://api.theysaidso.com/qod.json?catagory"
         urlt ="http://quotesondesign.com/api/3.0/api-3.0.json"
-        data = urllib2.urlopen(urlt)
-        fd = json.load(data)
+        data = requests.get(url)
+        fd = json.loads(data.text)
         //quote main container
         status = (fd["quote"])
 
